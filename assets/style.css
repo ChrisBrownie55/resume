@@ -1,21 +1,97 @@
-html, body {
-  width: 100%;
+html,
+body {
   height: 100%;
   margin: 0;
 }
 
 body {
-  display: grid;
-  place-items: center;
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 16rem);
+  max-width: 50rem;
+  min-width: 20rem;
+  margin: 0 auto;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 
-.title {
-  font-weight: 300;
+.contact {
+  margin-bottom: 1.5rem;
+}
+.contact > .title {
+  font-weight: 600;
+  font-size: 1.65rem;
+  text-align: center;
   font-family: Roboto;
-  animation: fadeIn 0.75s 0.25s ease-in-out forwards;
+  color: #666;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+.contact > .title > b {
+  color: black;
 }
 
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.links > a {
+  color: #1772d4;
+  text-decoration: none;
+}
+
+.content {
+}
+
+.category {
+}
+.category > h1 {
+  font-size: 1.35rem;
+  border-bottom: solid #222 1px;
+  padding-bottom: 0.1rem;
+}
+
+.areas-of-expertise > ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0;
+}
+.areas-of-expertise > ul > li {
+}
+
+.job {
+  margin-bottom: 1rem;
+}
+
+.job > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.1rem;
+}
+
+.job-title, .date, .company {
+  margin: 0;
+}
+
+
+.job-duties {
+}
+.job-duties > li {
+}
+
+.education {
+}
+.education > h4 {
+}
+.education > h4 > span {
+}
+.education > ul {
+}
+.education > ul > li {
 }
