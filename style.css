@@ -12,4 +12,10 @@ body {
 .title {
   font-weight: 300;
   font-family: Roboto;
+  animation: fadeIn 0.75s 0.25s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
